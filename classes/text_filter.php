@@ -21,11 +21,11 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  *
  */
-global $CFG;
-require_once($CFG->libdir . '/filelib.php');
-defined('MOODLE_INTERNAL') || die();
-class filter_planetestream extends moodle_text_filter
-{
+
+namespace filter_planetestream;
+
+class text_filter extends \moodle_text_filter {
+
     /**
      * Get attribute from tag
      *
